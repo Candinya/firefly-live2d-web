@@ -9,6 +9,7 @@ pages:
     paths:
       - node_modules/
   script:
+    - npm install -g pnpm
     - pnpm i --frozen-lockfile
     - pnpm build
     - cp -a dist/. public/
