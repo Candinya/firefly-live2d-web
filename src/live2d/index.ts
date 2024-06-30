@@ -2,28 +2,20 @@ import { FacePoint } from './face-point';
 import { Live2dRenderer } from './renderer';
 import { getAngle, getDistance } from './math-util';
 
-const CUBISM_CORE_URL = 'https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js';
+const CUBISM_CORE_URL = './live2dcubismcore.min.js';
 
-const MODEL_PATH = './misskey/live2d/ai/web/';
+const MODEL_PATH = './Firefly/';
 const MODEL_FILES = {
-	moc3: MODEL_PATH + 'ai.moc3',
-	model3: MODEL_PATH + 'ai.model3.json',
-	physics3: MODEL_PATH + 'ai.physics3.json',
+	moc3: MODEL_PATH + 'Firefly.moc3',
+	model3: MODEL_PATH + 'Firefly.model3.json',
+	physics3: MODEL_PATH + 'Firefly.physics3.json',
 	textures: [
-		MODEL_PATH + 'ai.4096/texture_00.png',
+		MODEL_PATH + 'Firefly.8192/texture_00.png',
+		MODEL_PATH + 'Firefly.8192/texture_01.png'
 	],
 	expressions: {
-		smile: MODEL_PATH + 'expressions/exp_01.exp3.json',
-		surprise: MODEL_PATH + 'expressions/exp_02.exp3.json',
-		happy: MODEL_PATH + 'expressions/exp_06.exp3.json',
-		jitome: MODEL_PATH + 'expressions/exp_11.exp3.json',
-		gurugurume: MODEL_PATH + 'expressions/exp_20.exp3.json',
 	},
 	motions: {
-		swing: MODEL_PATH + 'motions/mtn_03.motion3.json',
-		akubi: MODEL_PATH + 'motions/mtn_04.motion3.json',
-		mimi: MODEL_PATH + 'motions/mtn_05.motion3.json',
-		AiArt: MODEL_PATH + 'motions/AiArt.motion3.json',
 	},
 };
 
