@@ -1,0 +1,22 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+image: node:lts
+pages:
+  stage: deploy
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+      prefix: npm
+    paths:
+      - node_modules/
+  script:
+    - npm install -g pnpm
+    - pnpm i --frozen-lockfile
+    - pnpm build
+    - cp -a dist/. public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
