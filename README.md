@@ -1,11 +1,20 @@
-# Vue 3 + Typescript + Vite
+# 流萤 Live2D 网页
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+## 模型来源
 
-## Recommended IDE Setup
+https://space.bilibili.com/348616056
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## 使用方法（尚未验证）
 
-## Type Support For `.vue` Imports in TS
+使用 iframe 嵌入，可以使用 query 传入的参数有：
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+- scale: 缩放倍率
+- x: X 轴偏移
+- y: Y 轴偏移
+- eyeX: 眼球 X 偏移
+- eyeY: 眼球 Y 偏移
+
+
+## 非常感谢
+
+[Misskey/MascotWeb](https://github.com/misskey-dev/mascot-web)
